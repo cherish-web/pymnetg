@@ -21,7 +21,7 @@ def main():
         print("MNETG Connect Success!")
 
     while True:
-        input_str = input('请输入寄存器地址(W0000,10|B0000,10):')
+        input_str = input('请输入寄存器地址(W0000,1:2:3|B0000,1:0:1:0:1):')
         if len(input_str.split(',')) == 2:
             datas = input_str.split(',')[1]
             input_str = input_str.split(',')[0]
