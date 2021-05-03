@@ -22,17 +22,16 @@ def main():
 
     while True:
         input_str = input('请输入寄存器地址(W0000,10|B0000,10):')
-        length = 1
         if len(input_str.split(',')) == 2:
-            length = input_str.split(',')[1]
+            datas = input_str.split(',')[1]
             input_str = input_str.split(',')[0]
-        try:
-            print(worker.write(input_str, int(length)))
-        except Exception as e:
-            # print("输入错误, 程序终止",e)
-            # mc.close_connect()
-            # break
-            print(e)
+            try:
+                print(worker.write(input_str, for data in datas.split(':')))
+            except Exception as e:
+                # print("输入错误, 程序终止",e)
+                # mc.close_connect()
+                # break
+                print(e)
 
 
 if __name__ == '__main__':

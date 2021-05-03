@@ -27,7 +27,7 @@ def main():
             length = input_str.split(',')[1]
             input_str = input_str.split(',')[0]
         try:
-            print(worker.write(input_str, [int(data) for data in length.split(':')]))
+            print(worker.read(input_str, int(length)))
         except Exception as e:
             # print("输入错误, 程序终止",e)
             # mc.close_connect()
