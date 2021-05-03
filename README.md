@@ -1,7 +1,7 @@
 # pymnetg
 python封装三菱光纤板卡读写库
 
-#demo_write
+# demo_write
 
 from pymnetg import *
 from pymnetg.mnnetg_enum import ChanEnum
