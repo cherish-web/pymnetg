@@ -3,7 +3,7 @@ python封装三菱光纤板卡读写库
 
 demo_write
 -----
-
+```python
 from pymnetg import *
 from pymnetg.mnnetg_enum import ChanEnum
 
@@ -25,3 +25,4 @@ while True:
         # mc.close_connect()
         # break
         print(e)
+```
